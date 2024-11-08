@@ -1,26 +1,25 @@
 import React from 'react'
-import { Link, useLoaderData } from 'react-router-dom'
+import {useLoaderData } from 'react-router-dom'
 import Header from '../Header/Header'
+import CardLogement from '../CardLogement/CardLogement'
+
+import styles from "./Home.module.scss"
 
 export default function Home() {
 
   const logements = useLoaderData()
 
-  console.log(logements)
-
   return (
     <>
     <Header />
-    <ol>
+
+    <ul className={styles.ListLogements}>
       {logements.map(logement => (
         <li key={logement.id}>
-          <Link to={`logement/${logement.id}`}>
-            <h2>{logement.title}</h2>
-            <img src={logement.cover} width="300" />
-          </Link>
+          <CardLogement {...logement} />
         </li>
       ))}
-    </ol>
+    </ul>
     </>
   )
 }

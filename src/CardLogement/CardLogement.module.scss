@@ -1,0 +1,19 @@
+.CardLogement {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+
+  & .Text {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  & .Media {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
