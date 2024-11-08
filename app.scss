@@ -4,6 +4,7 @@
 
 * {
   font-family: 'Montserrat';
+  box-sizing: border-box;
 }
 
 html, body {
@@ -13,4 +14,14 @@ html, body {
 #root-router {
   max-width: 1440px;
   margin: auto;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
 }
