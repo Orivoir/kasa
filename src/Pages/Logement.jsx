@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLoaderData} from 'react-router-dom'
-import Header from './Header/Header'
+import Header from '../Header/Header'
 
 export default function Logement() {
 

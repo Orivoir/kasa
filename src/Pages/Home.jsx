@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
-import Header from './Header/Header'
+import Header from '../Header/Header'
 
 export default function Home() {
 

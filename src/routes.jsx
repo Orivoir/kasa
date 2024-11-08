@@ -1,11 +1,11 @@
 import React from 'react'
 import {createHashRouter, redirect} from "react-router-dom";
 
-import NotFound from "./Not-Found"
+import NotFound from "./Pages/Not-Found"
 
-import Home from './Home';
-import Logement from './Logement';
-import About from "./About"
+import Home from './Pages/Home';
+import Logement from './Pages/Logement';
+import About from "./Pages/About"
 import {getLogementById, getLogements} from "./api"
 
 const router = createHashRouter([
