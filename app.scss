@@ -11,9 +11,20 @@ html, body {
   margin: 0;
 }
 
+html, body, main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 #root-router {
-  max-width: 1440px;
+  width: 80%;
+  min-width: 400px;
   margin: auto;
+  flex: 1;
 }
 
 ul, ol {

@@ -8,15 +8,9 @@
   padding-left: 25px;
 
   font-size: 18px;
-
-  opacity: 0;
-  transform: translateY(-50%);
-
-  transition: all linear .2s;
+  display: none;
 
   &.Open {
-    opacity: 1;
-    transform: translateY(0);
-    width: 100%;
+    display: block;
   }
 }
