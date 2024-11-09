@@ -4,7 +4,7 @@ import styles from "./Name.module.scss"
 
 export default function({children}) {
 
-  const [firstName, lastName] = children.split(" ")
+  const [firstName, lastName] = children?.split(" ")
 
   return (
     <div>
