@@ -1,0 +1,20 @@
+.ActionArrow {
+
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  outline: none;
+  offset: none;
+  border: none;
+  cursor: pointer;
+
+  &.Left {
+    left: 0px;
+    transform: rotateZ(90deg);
+  }
+
+  &.Right {
+    right: 0px;
+    transform: rotateZ(-90deg);
+  }
+}
