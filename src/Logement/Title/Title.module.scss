@@ -1,0 +1,16 @@
+.Title {
+
+  & h2, & p {
+    margin: 0;
+  }
+
+  & h2 {
+    color: var(--main-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  & p {
+    font-size: 18px;
+  }
+}
