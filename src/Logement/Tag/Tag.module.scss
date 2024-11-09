@@ -1,0 +1,22 @@
+.Tag {
+
+  background-color: var(--main-color);
+  border-radius: 10px;
+
+  height: 25px;
+  width: 115px;
+
+  & span {
+
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+
+    /** 
+    * behavior during text too big: https://stackoverflow.com/questions/7612125/how-to-hide-too-long-texts-in-div-elements
+    **/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
