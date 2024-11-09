@@ -3,14 +3,17 @@
   background-color: var(--main-color);
   border-radius: 10px;
 
-  height: 25px;
+  padding: 4px 0;
   width: 115px;
 
-  & span {
+  & p {
 
+    margin: 0;
     color: #fff;
     font-size: 14px;
     text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
 
     /** 
     * behavior during text too big: https://stackoverflow.com/questions/7612125/how-to-hide-too-long-texts-in-div-elements

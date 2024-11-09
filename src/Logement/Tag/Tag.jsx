@@ -6,7 +6,7 @@ export default function Tag({name}) {
 
   return (
     <div className={styles.Tag}>
-      <span>{name}</span>
+      <p>{name}</p>
     </div>
   )
 }
