@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   border-radius: 10px;
+  overflow: hidden;
 
   & .Text {
     margin: 0;
@@ -10,10 +11,17 @@
     left: 20px;
     color: #fff;
     font-size: 18px;
+    font-weight: 700;
   }
 
   & .Media {
     object-fit: cover;
     border-radius: 10px;
+    transition: transform .35s linear;
+
+    &:hover {
+
+      transform: scale(1.2);
+    }
   }
 }
