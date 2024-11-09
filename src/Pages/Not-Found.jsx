@@ -1,13 +1,23 @@
 import React from 'react'
-import { useRouteError } from 'react-router-dom'
+
+import Header from '../Header/Header'
+import { Link } from 'react-router-dom'
+
+import styles from "./Not-Found.module.scss"
 
 export default function NotFound() {
 
-  const error = useRouteError()
-
-  console.log(error)
-
   return (
-    <h1>Oops, something went wrong 404</h1>
+    <>
+    <Header />
+
+    <section className={styles.NotFound}>
+      <h2>404</h2>
+
+      <p>Oups! La page que vous avez demandez n'existe pas.</p>
+
+      <Link to="/">Retourner sur la page d'accueil</Link>
+    </section>
+    </>
   )
 }
