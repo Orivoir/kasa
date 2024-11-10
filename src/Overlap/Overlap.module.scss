@@ -1,0 +1,35 @@
+.Overlap {
+
+  margin: 0;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.35);
+  }
+
+  & p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(50%) translateY(50%);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+  }
+
+  & img {
+    object-fit: cover;
+    transform: translateY(-300px);
+  }
+}

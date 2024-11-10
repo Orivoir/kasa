@@ -3,12 +3,17 @@ import Header from '../Header/Header'
 import Accordion from "../Accordion/Accordion"
 
 import styles from "./About.module.scss"
+import Overlap from '../Overlap/Overlap'
+
+import BgAboutImage from "./../../images/bg/bg-about.jpg"
 
 export default function About() {
 
   return (
     <div className={styles.About}>
       <Header />
+
+      <Overlap image={BgAboutImage} />
       
       <ul className={styles.AccordionList}>
         <li>
