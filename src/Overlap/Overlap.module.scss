@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 25px;
+  margin-bottom: 10px;
 
   &::after {
     content: "";
@@ -31,5 +32,15 @@
   & img {
     object-fit: cover;
     transform: translateY(-300px);
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .Overlap {
+    & p {
+      font-size: 30px;
+      transform: translateX(5%) translateY(50%);
+    }
   }
 }

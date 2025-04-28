@@ -28,3 +28,10 @@
 .AccordionsList {
   align-items: baseline;
 }
+
+@media (max-width: 800px) {
+  .TitleAndHost {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

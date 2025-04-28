@@ -1,5 +1,6 @@
 import esbuild from "esbuild";
 import {sassPlugin} from "esbuild-sass-plugin";
+import { readFileSync, writeFileSync } from "fs";
 
 await esbuild.build({
   entryPoints: ["app.jsx"],

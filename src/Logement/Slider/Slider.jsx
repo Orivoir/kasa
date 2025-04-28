@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Media from "./Media"
-import ActionArrow from "./ActionArrow"
 import Counter from "./Counter"
 
 import styles from "./Slider.module.scss"

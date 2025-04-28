@@ -1,6 +1,7 @@
 import esbuild from "esbuild";
 import {sassPlugin} from "esbuild-sass-plugin";
 
+
 const ctx = await esbuild.context({
   entryPoints: ["app.jsx"],
   bundle: true,
